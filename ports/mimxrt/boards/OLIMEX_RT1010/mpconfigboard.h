@@ -3,7 +3,7 @@
 #define MICROPY_HW_USB_MANUFACTURER_STRING "Olimex Ltd."
 #define MICROPY_HW_USB_VID 0x15ba
 #define MICROPY_HW_USB_PID 0x0046
-#define MICROPY_PY_UOS_DUPTERM_BUILTIN_STREAM (0)
+#define MICROPY_PY_OS_DUPTERM_BUILTIN_STREAM (0)
 
 // Olimex RT1010-Py has 1 board LED
 #define MICROPY_HW_LED1_PIN (pin_GPIO_11)
@@ -24,6 +24,12 @@
     { 0 }, { 0 }, \
     { 0 }, { 0 }, \
     { IOMUXC_GPIO_06_LPUART4_TXD }, { IOMUXC_GPIO_05_LPUART4_RXD },
+
+#define IOMUX_TABLE_UART_CTS_RTS \
+    { IOMUXC_GPIO_08_LPUART1_CTS_B }, { IOMUXC_GPIO_07_LPUART1_RTS_B }, \
+    { 0 }, { 0 }, \
+    { 0 }, { 0 }, \
+    { IOMUXC_GPIO_AD_14_LPUART4_CTS_B }, { IOMUXC_GPIO_AD_13_LPUART4_RTS_B },
 
 #define MICROPY_HW_SPI_INDEX { 0, 1, 2 }
 
