@@ -1,4 +1,4 @@
-.. currentmodule:: rp2
+.. currentmodule:: _rp2
 .. _rp2.PIO:
 
 class PIO -- advanced PIO usage

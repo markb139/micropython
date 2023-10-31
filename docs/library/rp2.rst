@@ -238,6 +238,9 @@ nop()
 Classes
 -------
 
+.. module:: _rp2
+    :synopsis: C functionality specific to the RP2
+
 .. toctree::
     :maxdepth: 1
 
