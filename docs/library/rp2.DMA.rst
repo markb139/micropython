@@ -34,15 +34,21 @@ Methods
 
     :rtype: bool
    
-.. method:: DMA.copy(from_buffer, to_buffer, handler=None, irq=DMA_IRQ_0|DMA_IRQ_1)
+.. method:: DMA.copy(from_buffer, to_buffer, handler=None, [irq])
     
     Copies data from one buffer to another using DMA.
     If `handler`` is provider, IRQ will be used to call back, otherwise no IRQ will be set.
 
-.. method:: DMA.read_into(from_address, to_buffer, data_size=DMA_SIZE_8|DMA_SIZE16|DMA_SIZE_32, transfer_count=0, dreq=0, handler=None, irq=DMA_IRQ_0|DMA_IRQ_1)
+    :param from_buffer: bytearray
+    :param to_buffer: bytearray
+    :param handler: optional IRQ handler
+    :param irq: optional irq channel. Either DMA_IRQ_0 or DMA_IRQ_1
+
+
+.. method:: DMA.read_into(from_address, to_buffer, data_size=DMA_SIZE_8|DMA_SIZE_16|DMA_SIZE_32, transfer_count=0, dreq=0, handler=None, irq=DMA_IRQ_0|DMA_IRQ_1)
 
     Reads data from an address into a buffer using DMA.
-    If `handler`` is provider, IRQ will be used to call back, otherwise no IRQ will be set.
+    If `handler`` is provider, IRQ will be used t   o call back, otherwise no IRQ will be set.
 
     from_address - address to send data
     to_buffer - bytearray
