@@ -5,7 +5,7 @@ Classes
 -------
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
 
     rp2.DMA.rst
     rp2.Flash.rst

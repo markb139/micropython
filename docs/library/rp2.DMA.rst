@@ -1,5 +1,4 @@
 .. currentmodule:: _rp2
-.. _rp2.DMA:
 
 class DMA -- access to direct memory access functionality
 ===============================================
