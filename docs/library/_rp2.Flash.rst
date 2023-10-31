@@ -1,5 +1,5 @@
 .. currentmodule:: _rp2
-.. _rp2.Flash:
+.. __rp2.Flash:
 
 class Flash -- access to built-in flash storage
 ===============================================

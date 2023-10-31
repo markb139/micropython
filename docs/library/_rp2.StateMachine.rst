@@ -1,5 +1,5 @@
 .. currentmodule:: _rp2
-.. _rp2.StateMachine:
+.. __rp2.StateMachine:
 
 class StateMachine -- access to the RP2040's programmable I/O interface
 =======================================================================

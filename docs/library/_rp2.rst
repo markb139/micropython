@@ -1,3 +1,5 @@
+.. currentmodule:: _rp2
+
 .. module:: _rp2
     :synopsis: C functionality specific to the RP2. This declares the module which can be added to in other files.
 
